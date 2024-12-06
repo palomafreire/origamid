@@ -1,0 +1,16 @@
+@charset "UTF-8";
+
+* {
+  margin: 0px;
+  font-family: Arial;
+}
+
+header {
+  background-color: #f7f7f7;
+  height: 25vh;
+}
+
+.titulo {
+  display: flex;
+  justify-content: center;
+}
