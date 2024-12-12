@@ -1,0 +1,156 @@
+/* reseta o CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* cor de fundo e fonte do body */
+body {
+  background-color: #f7f7f7;
+  font-family: Arial, Helvetica, sans-serif;
+  display: grid;
+  justify-content: center;
+}
+
+h1 {
+  font-size: 2rem;
+}
+/* tamanho do parágrafo */
+p {
+  font-size: 1.25rem;
+}
+
+li {
+  list-style: none;
+}
+
+/* cabeçalho */
+header {
+  height: 17rem;
+  display: grid;
+  justify-content: center;
+  padding-top: 4rem;
+  width: 100%;
+}
+
+header img {
+  justify-self: center;
+}
+
+.menu {
+  display: flex;
+  gap: 40px;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: black;
+  padding: 1rem 2rem;
+  border-radius: 0.25rem;
+  background-color: white;
+  border: 2px solid transparent;
+}
+
+.menu li a:hover {
+  border: 2px solid red;
+}
+
+main {
+  justify-items: center;
+}
+
+#main-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 1000px;
+  padding-bottom: 4rem;
+}
+
+#description {
+  display: grid;
+  background-color: white;
+  text-align: right;
+  align-content: center;
+  gap: 20px;
+  justify-items: end;
+  padding: 2rem;
+  position: relative;
+}
+
+#description::before {
+  content: "";
+  background-color: #ee2211;
+  display: inline-block;
+  width: 4rem;
+  height: 0.25rem;
+  position: absolute;
+  top: 2rem;
+  right: -2rem;
+}
+
+#description a {
+  background-color: #ee2211;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  color: white;
+  border-radius: 0.25rem;
+}
+
+#description a:hover {
+  background-color: #900;
+}
+
+#picture img {
+  display: block;
+  max-width: 100%;
+}
+
+#wave {
+  align-content: center;
+  text-align: right;
+  padding: 2rem;
+}
+
+#wave h2 {
+  background-image: url("./img/onda.svg");
+  font-size: 4rem;
+  color: #c6c6c6;
+}
+
+#vantagens {
+  display: grid;
+  padding: 2rem;
+  background-color: white;
+}
+
+.vantagem {
+  display: grid;
+  grid-template-columns: 1fr 10fr;
+  gap: 1rem;
+  padding: 2rem;
+  background-color: white;
+  border-left: 0.25rem solid transparent;
+}
+
+.vantagem:hover {
+  border-left: 0.25rem solid #ee2211;
+}
+
+.vantagem:nth-child(odd) {
+  background-color: #f7f7f7;
+}
+
+.vantagem img {
+  grid-row: 1 / 3;
+}
+
+footer {
+  height: 7rem;
+  background-color: white;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
