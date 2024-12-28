@@ -1,0 +1,195 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f7f7f7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+p {
+  font-size: 1.25rem;
+}
+
+a {
+  text-transform: uppercase;
+  text-decoration: none;
+  display: inline-block;
+  padding: 1rem 2rem;
+  border-radius: 0.25rem;
+}
+
+ul {
+  list-style: none;
+}
+
+header a {
+  background-color: #fff;
+  color: #000;
+  border: 2px solid #fff;
+}
+
+header a:hover {
+  border: 2px solid red;
+}
+
+header {
+  display: grid;
+}
+
+header img {
+  margin: auto;
+}
+
+header ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+main {
+  max-width: 1000px;
+  display: grid;
+}
+
+/* TELAS GRANDES */
+@media (min-width: 700px) {
+  header {
+    padding: 3rem 2rem;
+    gap: 3rem;
+  }
+
+  main {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  #descricao {
+    align-items: flex-end;
+    text-align: end;
+    position: relative;
+  }
+
+  #descricao::before {
+    content: "";
+    position: absolute;
+    width: 4rem;
+    height: 0.25rem;
+    background-color: #ee2211;
+    top: 3rem;
+    right: -2rem;
+  }
+
+  #titulo h2 {
+    font-size: 4rem;
+  }
+}
+
+/* TELAS PEQUENAS */
+@media (max-width: 700px) {
+  header {
+    padding: 2rem 1rem;
+    gap: 2rem;
+  }
+
+  main {
+    grid-template-columns: 1fr;
+  }
+
+  #descricao {
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  #titulo h2 {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 1000px) {
+  #titulo,
+  #vantagens {
+    grid-column: 1 / -1;
+  }
+}
+
+#descricao {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 2rem;
+}
+
+#descricao a {
+  background-color: #ee2211;
+  color: #fff;
+}
+
+#descricao a:hover {
+  background-color: #900;
+}
+
+#imagem img {
+  object-fit: cover;
+  height: 100%;
+}
+
+#titulo {
+  background-image: url(img/onda.svg);
+  color: #c6c6c6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem;
+}
+
+#vantagens {
+  background-color: white;
+  padding: 3rem;
+}
+
+#vantagens li:nth-child(even) {
+  background-color: white;
+}
+
+#vantagens li:nth-child(odd) {
+  background-color: #f7f7f7;
+}
+
+#vantagens div {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+#vantagens div:hover {
+  border-left: 3px solid red;
+}
+
+#vantagens img {
+  grid-row: 1 / -1;
+}
+
+footer {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  padding: 3rem;
+  margin-top: 4rem;
+  width: 100%;
+}
