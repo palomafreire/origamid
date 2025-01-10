@@ -1,0 +1,191 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f7f7f7;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+  font-size: 1.25rem;
+}
+
+a {
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 1rem 2rem;
+  border-radius: 0.25rem;
+  display: inline-block;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  padding: 2rem;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+li a {
+  color: black;
+  background-color: white;
+  border: 2px solid white;
+}
+
+li a:hover {
+  border: 2px solid #ee2211;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+}
+
+article {
+  max-width: 1000px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
+@media (max-width: 700px) {
+  article {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+}
+
+@media (max-width: 700px) {
+  article {
+    grid-template-columns: 1fr;
+  }
+}
+
+#segundo img {
+  max-width: 100%;
+  display: block;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+#primeiro {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 2rem;
+  padding: 2rem;
+  text-align: end;
+  position: relative;
+}
+
+#primeiro::before {
+  content: "";
+  width: 4rem;
+  height: 0.3rem;
+  background-color: red;
+  position: absolute;
+  top: 2.5rem;
+  right: -2rem;
+}
+
+@media (max-width: 700px) {
+  #primeiro::before {
+    display: none;
+  }
+
+  #primeiro {
+    text-align: center;
+    align-items: center;
+  }
+}
+
+#primeiro h2 {
+  font-size: 2.3rem;
+}
+
+#primeiro a {
+  background-color: #ee2211;
+  color: white;
+  font-size: 1.2rem;
+}
+
+#primeiro a:hover {
+  background-color: darkred;
+}
+
+#terceiro {
+  background-image: url(./img/onda.svg);
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 1000px) {
+  #terceiro,
+  #quarto {
+    grid-column: 1 / -1;
+  }
+}
+
+#terceiro h1 {
+  color: rgb(192, 192, 192);
+  font-size: 4rem;
+  text-align: center;
+}
+
+#quarto {
+  background-color: white;
+  padding: 3rem;
+}
+
+#quarto ul {
+  gap: 0px;
+}
+
+#quarto ul li {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+  padding: 1rem;
+  gap: 1rem;
+}
+
+#quarto ul li:hover {
+  border-left: 2px solid #ee2211;
+}
+
+#quarto ul li img {
+  grid-row: 1 / -1;
+}
+
+#quarto ul li:nth-child(odd) {
+  background-color: rgb(244, 243, 243);
+}
+
+footer {
+  background-color: white;
+  height: 15vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer p {
+  font-size: 1.5rem;
+}
