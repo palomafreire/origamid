@@ -1,0 +1,33 @@
+.experiencia {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+.experiencia h2 {
+  color: #e0e0e0;
+  text-transform: uppercase;
+  font-size: 8rem;
+  word-break: break-all;
+  max-width: 4ch;
+}
+
+@media (max-width: 1000px) {
+  .experiencia {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    align-items: center;
+  }
+
+  .experiencia h2 {
+    word-break: initial;
+    font-size: 6rem;
+    max-width: initial;
+    text-align: center;
+  }
+}
+
+@media (max-width: 650px) {
+  .experiencia h2 {
+    font-size: 4rem;
+  }
+}

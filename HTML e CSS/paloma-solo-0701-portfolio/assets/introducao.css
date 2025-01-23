@@ -48,7 +48,7 @@
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 625px) {
   .introducao h1 {
     font-size: 2rem;
   }
