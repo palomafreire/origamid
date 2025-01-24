@@ -12,26 +12,6 @@
   max-width: 4ch;
 }
 
-@media (max-width: 1000px) {
-  .experiencia {
-    grid-template-columns: 1fr;
-    gap: 40px;
-  }
-
-  .experiencia h2 {
-    word-break: initial;
-    font-size: 6rem;
-    max-width: initial;
-    text-align: center;
-  }
-}
-
-@media (max-width: 650px) {
-  .experiencia h2 {
-    font-size: 4rem;
-  }
-}
-
 .conteudo-experiencia {
   display: grid;
   grid-template-columns: 1.5fr 10fr;
@@ -49,6 +29,7 @@
   justify-self: right;
   padding-right: 30px;
   padding-top: 20px;
+  white-space: nowrap;
 }
 
 .nome-empresa {
@@ -97,4 +78,48 @@
   padding: 5px 10px;
   border-radius: 4px;
   font-size: 0.75rem;
+}
+
+@media (max-width: 1000px) {
+  .experiencia {
+    grid-template-columns: 1fr;
+    gap: 0px;
+  }
+
+  .vazio {
+    display: none;
+  }
+
+  .experiencia h2 {
+    word-break: initial;
+    font-size: 6rem;
+    max-width: initial;
+    text-align: center;
+  }
+  .conteudo-experiencia > div {
+    margin-bottom: 15px;
+  }
+
+  .conteudo-experiencia > span {
+    padding-right: 20px;
+  }
+  .conteudo-experiencia > p {
+    grid-column: 1 / -1;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 5px;
+  }
+}
+
+@media (max-width: 650px) {
+  .experiencia {
+    gap: 10px;
+  }
+  .experiencia h2 {
+    font-size: 4rem;
+  }
+
+  .conteudo-experiencia > div {
+    grid-template-columns: 1fr;
+  }
 }
