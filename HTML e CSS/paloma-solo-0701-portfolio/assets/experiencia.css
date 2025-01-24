@@ -1,6 +1,7 @@
 .experiencia {
   display: grid;
   grid-template-columns: 1fr 2fr;
+  gap: 60px;
 }
 
 .experiencia h2 {
@@ -15,7 +16,6 @@
   .experiencia {
     grid-template-columns: 1fr;
     gap: 40px;
-    align-items: center;
   }
 
   .experiencia h2 {
@@ -30,4 +30,71 @@
   .experiencia h2 {
     font-size: 4rem;
   }
+}
+
+.conteudo-experiencia {
+  display: grid;
+  grid-template-columns: 1.5fr 10fr;
+}
+
+.conteudo-experiencia > p {
+  font-size: 1.2rem;
+  color: #434242;
+  padding-right: 50px;
+  padding-top: 20px;
+  margin-bottom: 40px;
+}
+
+.conteudo-experiencia > span {
+  justify-self: right;
+  padding-right: 30px;
+  padding-top: 20px;
+}
+
+.nome-empresa {
+  position: relative;
+}
+
+.nome-empresa::before {
+  content: "";
+  display: block;
+  width: 4px;
+  height: 20px;
+  background: linear-gradient(#b6f829, #67dd0a);
+  position: absolute;
+  left: -24px;
+}
+
+.conteudo-experiencia > div {
+  background-color: rgb(240, 239, 239);
+  border-radius: 4px;
+  margin-bottom: 20px;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 10px;
+}
+
+.conteudo-experiencia > div > h3 {
+  font-size: 1rem;
+}
+
+.conteudo-experiencia > div > p {
+  margin-right: 30px;
+  margin-bottom: 20px;
+  font-size: 0.8rem;
+}
+
+.conteudo-experiencia > div > div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-content: flex-start;
+}
+
+.conteudo-experiencia > div > div > span {
+  background: white;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: 0.75rem;
 }
