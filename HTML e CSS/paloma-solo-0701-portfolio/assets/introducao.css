@@ -3,6 +3,7 @@
   grid-template-columns: 1fr 2fr;
   gap: 160px;
   align-items: center;
+  background-color: lightblue;
 }
 
 .introducao-texto {

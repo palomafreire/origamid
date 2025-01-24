@@ -2,6 +2,7 @@
   display: grid;
   grid-template-columns: 1fr 2fr;
   gap: 60px;
+  background-color: rgba(144, 238, 144, 0.224);
 }
 
 .experiencia h2 {
@@ -86,6 +87,11 @@
     gap: 0px;
   }
 
+  .conteudo-experiencia {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
   .vazio {
     display: none;
   }
@@ -96,18 +102,21 @@
     max-width: initial;
     text-align: center;
   }
-  .conteudo-experiencia > div {
-    margin-bottom: 15px;
-  }
 
-  .conteudo-experiencia > span {
-    padding-right: 20px;
-  }
   .conteudo-experiencia > p {
-    grid-column: 1 / -1;
     padding: 20px;
     text-align: center;
     margin-bottom: 5px;
+  }
+
+  .conteudo-experiencia > span {
+    font-size: 1.5rem;
+    place-self: center;
+    padding-bottom: 10px;
+  }
+
+  .conteudo-experiencia > div {
+    margin-bottom: 15px;
   }
 }
 
@@ -116,10 +125,14 @@
     gap: 10px;
   }
   .experiencia h2 {
-    font-size: 4rem;
+    font-size: 3rem;
   }
 
   .conteudo-experiencia > div {
     grid-template-columns: 1fr;
+  }
+
+  .conteudo-experiencia > div > div {
+    justify-content: center;
   }
 }

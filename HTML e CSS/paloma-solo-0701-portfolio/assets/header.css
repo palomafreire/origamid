@@ -1,6 +1,8 @@
 .header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  background-color: pink;
 }
 
 .header ul {
@@ -19,6 +21,5 @@
   .header {
     flex-direction: column;
     gap: 30px;
-    align-items: center;
   }
 }
