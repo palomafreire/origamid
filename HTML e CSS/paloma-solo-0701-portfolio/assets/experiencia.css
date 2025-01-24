@@ -92,10 +92,6 @@
     text-align: center;
   }
 
-  .vazio {
-    display: none;
-  }
-
   .experiencia h2 {
     word-break: initial;
     font-size: 6rem;
@@ -110,13 +106,17 @@
   }
 
   .conteudo-experiencia > span {
-    font-size: 1.5rem;
+    display: none;
+    /* font-size: 1.5rem;
     place-self: center;
-    padding-bottom: 10px;
+    padding-bottom: 10px; */
   }
 
   .conteudo-experiencia > div {
     margin-bottom: 15px;
+  }
+  .conteudo-experiencia > div > div {
+    justify-content: center;
   }
 }
 
@@ -130,9 +130,5 @@
 
   .conteudo-experiencia > div {
     grid-template-columns: 1fr;
-  }
-
-  .conteudo-experiencia > div > div {
-    justify-content: center;
   }
 }
